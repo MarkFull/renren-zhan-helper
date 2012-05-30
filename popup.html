@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>Post to Zhan.Renren</title>
+    <style>
+      body {
+        min-width:357px;
+        overflow-x:hidden;
+      }
+	  #title {
+		width: 93%;
+		height: 36px;
+	  }
+	  #article-content {
+		width: 93%;
+		height: 300px;
+	  }
+    </style>
+	<script src="jquery-1.7.1.min.js"></script>
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+	<h1>Let's Tech</h1>
+	<div id="form">
+		<textarea maxlength="240" placeholder="标题" name="subject" class="title" id="title"></textarea>
+		<textarea placeholder="正文(选填)" name="body" class="content" aria-hidden="true" id="article-content"></textarea>
+		<input type="submit" id="sbm" />
+	</div>
+	<div id="msg" class="hidden" style="display: none;">
+		Done! <a href="http://zhan.renren.com/">点此查看</a>
+	</div>
+  </body>
+</html>
